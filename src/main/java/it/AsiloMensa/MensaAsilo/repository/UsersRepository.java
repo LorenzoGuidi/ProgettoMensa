@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface UsersRepository extends JpaRepository<UsersModel,Integer> {
 
-    @Override
+
     Optional<UsersModel> findByLoginAndPassword(String login, String password);
 
 

@@ -28,4 +28,7 @@ public class UsersService {
 
     }
 
+    public UsersModel authenticate( String login, String password){
+        return usersRepository.findByLoginAndPassword(login,password).orElse(null);
+    }
 }
